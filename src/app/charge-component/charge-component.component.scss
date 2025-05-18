@@ -1,0 +1,41 @@
+.form-section {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+}
+
+/* Responsive grid layout for each card */
+.grid-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem 1.25rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+
+  label {
+    font-size: 0.75rem;
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+    color: var(--text-color-secondary, #6b7280);
+  }
+
+  .p-inputtext,
+  .p-calendar,
+  .p-dropdown {
+    width: 100%;
+    font-size: 0.875rem;
+  }
+}
+
+/* Checkbox row styling */
+.checkbox {
+  flex-direction: row;
+  align-items: center;
+
+  label {
+    margin-left: 0.5rem;
+    margin-bottom: 0;
+  }
+}

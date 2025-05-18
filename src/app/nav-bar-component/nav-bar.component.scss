@@ -1,0 +1,25 @@
+.custom-navbar {
+  background-color: #087bba;
+  color: white;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.logout-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.logout-link:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}

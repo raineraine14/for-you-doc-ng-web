@@ -1,0 +1,84 @@
+<!-- Personal Info -->
+<p-card header="Personal Information" class="form-section">
+  <form class="grid-form">
+    <div class="field">
+      <label for="firstname">Firstname</label>
+      <input pInputText id="firstname" />
+    </div>
+
+    <div class="field">
+      <label for="lastname">Lastname</label>
+      <input pInputText id="lastname" />
+    </div>
+    <div class="field">
+      <label for="age">Age</label>
+      <input pInputText id="age" />
+    </div>
+    <div class="field">
+      <label for="dob">Date of Birth</label>
+      <p-calendar id="dob" dateFormat="mm/dd/yy"></p-calendar>
+    </div>
+  </form>
+</p-card>
+
+<!-- Charge Details -->
+<p-card header="Charge Details" class="form-section">
+  <form class="grid-form">
+    <div class="procedure field">
+      <label for="procedures">Procedures</label>
+      <p-dropdown
+        id="procedures"
+        [options]="procedures"
+        placeholder="Select"
+      ></p-dropdown>
+    </div>
+    <div class="field">
+      <label for="price">Price</label>
+      <input pInputText id="price" />
+    </div>
+    <div class="field">
+      <label for="dos">Date of Service</label>
+      <p-calendar id="dos" dateFormat="mm/dd/yy"></p-calendar>
+    </div>
+    <div class="field">
+      <label for="gender">Gender</label>
+      <p-dropdown
+        id="gender"
+        [options]="genders"
+        placeholder="Select"
+      ></p-dropdown>
+    </div>
+
+    <div class="field">
+      <label for="facility">Facility</label>
+      <p-dropdown
+        id="facility"
+        [options]="facilities"
+        placeholder="Select"
+      ></p-dropdown>
+    </div>
+
+    <div class="field">
+      <label for="hmo">HMO</label>
+      <p-dropdown id="hmo" [options]="hmos" placeholder="Select"></p-dropdown>
+    </div>
+  </form>
+</p-card>
+
+<!-- Payment Info -->
+<p-card header="Payment Info" class="form-section">
+  <form class="grid-form">
+    <div class="field">
+      <label for="amount">Amount</label>
+      <input pInputText id="amount" />
+    </div>
+    <div class="field checkbox">
+      <p-checkbox inputId="paid" class="paid-checkbox"></p-checkbox>
+      <label for="paid">Paid</label>
+    </div>
+    <div class="field">
+      <label for="type">Type</label>
+      <p-dropdown id="type" [options]="types" placeholder="Select"></p-dropdown>
+    </div>
+  </form>
+</p-card>
